@@ -16,7 +16,7 @@ J’ai donc reproduit le design dans une large entête avec un double arrière-p
 
  ![color-hipster pastel](DOCUMENTATION/images/color-hipster pastel.png)
 
-Thème: https://color.adobe.com/fr/Hipster-pastel-color-theme-6136123/ 
+Thème: https://color.adobe.com/fr/Hipster-pastel-color-theme-6136123/
 
 - Pastel pink: #FDCBDE
 - Shalimar: #F4F4A6
@@ -31,7 +31,7 @@ La police utilisé est [Lato](http://www.latofonts.com). Sans sérif, elle est m
 
 ## GitHub
 
-Repository: https://github.com/iStuffs/hipster-gradient 
+Repository: https://github.com/iStuffs/hipster-gradient
 
 Demo: http://istuffs.github.io/hipster-gradient/
 
