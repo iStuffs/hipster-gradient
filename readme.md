@@ -8,7 +8,7 @@ Je me suis inspiré de l’écran de chargement de mario party 10. Le but était
 
 J’ai donc reproduit le design dans une large entête avec un double arrière-plan, un gradient linéaire pastel et un svg. Le svg est construit pour être répétable.  Les icônes vectorielles (en svg) permettent une netteté quel que soit la taille de l’arrière plan à couvrir ou la définition (standard ou écran rétina 2x et 3x).
 
-![hipstergradient-browser](DOCUMENTATION/images/hipstergradient-browser.png)
+ ![hipstergradient-browser](DOCUMENTATION/images/hipstergradient-browser.png)
 
 ------
 
