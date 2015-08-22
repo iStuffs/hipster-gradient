@@ -10,15 +10,62 @@
 <body>
 <header class="header"><h1 class="header-title">Hipster gradient</h1></header>
 
-<h2><a href="http://www.colorzilla.com/gradient-editor/" target="_blank">Ultimate CSS Gradient Generator</a></h2>
-<pre class="code">background: #fdcbde; /* Old browsers */
-background: -moz-linear-gradient(45deg,  #fdcbde 0%, #f4f4a6 33%, #b4edf3 66%, #fdcbde 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#fdcbde), color-stop(33%,#f4f4a6), color-stop(66%,#b4edf3), color-stop(100%,#fdcbde)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(45deg,  #fdcbde 0%,#f4f4a6 33%,#b4edf3 66%,#fdcbde 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(45deg,  #fdcbde 0%,#f4f4a6 33%,#b4edf3 66%,#fdcbde 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(45deg,  #fdcbde 0%,#f4f4a6 33%,#b4edf3 66%,#fdcbde 100%); /* IE10+ */
-background: linear-gradient(45deg,  #fdcbde 0%,#f4f4a6 33%,#b4edf3 66%,#fdcbde 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdcbde', endColorstr='#fdcbde',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */</pre>
+<h2>CSS Gradient</h2>
+<pre class="code">
+[CSS]
+background: linear-gradient(45deg,  #fdcbde 0%,#f4f4a6 33%,#b4edf3 66%,#fdcbde 100%);
+</pre>
+<p class="code-caption">Full gradient vendor prefix @<a href="http://www.colorzilla.com/gradient-editor/" target="_blank">colorzilla.com/gradient-editor/</a></p>
+
+<h2>Background animation</h2>
+<pre class="code">
+[CSS]
+.header {
+  animation: moving-bg 50s ease infinite;
+}
+
+@keyframes moving-bg {
+  0%   { background-position: 0 0; }
+  100% { background-position: 348px 0; }
+}
+</pre>
+
+<h2>Selection changing color</h2>
+<pre class="code">
+[CSS]
+::selection {
+  color: #333;
+  background-color: #fdcbde;
+  text-shadow: none;
+}
+</pre>
+<pre class="code">
+[JS - JQuery]
+var i = 1;
+$(document).ready(function(){
+	$(document).bind("mouseup", function() {
+    var t = '';
+  	if(window.getSelection){
+  		t = window.getSelection();
+  	} else if(document.getSelection){
+  		t = document.getSelection();
+  	} else if(document.selection){
+  		t = document.selection.createRange().text;
+  	}
+
+		if(t!=''){
+      var colors = ['#fdcbde','#f4f4a6','#b4edf3'];
+      if ( i > (colors.length-1) ) { i = 0; }
+      $('<style>'+
+      '::-moz-selection{background:' + colors[i] + '}'+
+      '::-webkit-selection{background:' + colors[i] + '}'+
+      '::selection{background:' + colors[i] + '}'+
+      '</style>').appendTo('head');
+      i++;
+		}
+  });
+});
+</pre>
 
 <h2>Browsers support</h2>
 <table class="browserSupportTable">
@@ -55,6 +102,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdcbde', end
   </tbody>
 </table>
 <footer class="footer">&copy; iStuffs</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
