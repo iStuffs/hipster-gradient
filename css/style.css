@@ -58,7 +58,7 @@ h1, h2 {
   background-image: url("../img/background.svg"), linear-gradient(90deg, #fdcbde 0%, #f4f4a6 33%, #b4edf3 66%, #fdcbde 100%);
   background-repeat: repeat;
   background-position: 0 0;
-  animation: moving-bg 50s ease infinite; }
+  animation: moving-bg 50s infinite; }
 
 .header-title {
   font-size: 7.5vw;
