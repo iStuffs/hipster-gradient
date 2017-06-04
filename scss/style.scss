@@ -1,0 +1,137 @@
+@import 'box-sizing';
+
+//variables
+$pastel1: #fdcbde;
+$pastel2: #f4f4a6;
+$pastel3: #b4edf3;
+$main: #333;
+$light: #ccc;
+
+@import 'selection';
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $main;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.code {
+  font-family: monospace;
+  background: $main;
+  color: $light;
+  border-radius: 7px;
+  padding: 15px 15px;
+  margin: 0 3%;
+
+  margin-bottom: 80px;
+}
+
+.code-caption {
+  font-size: 14px;
+  padding: 7px;
+  margin: 0 3%;
+
+  margin-top: -80px;
+  margin-bottom: 80px;
+}
+
+.header {
+  position: relative;
+
+  min-height: 300px;
+  margin-bottom: 80px;
+
+  background-color: $pastel1;
+  background-image: url('../img/background.svg'); // Old browsers
+  background-image: url('../img/background.svg'), -moz-linear-gradient(90deg,  $pastel1 0%, $pastel2 33%, $pastel3 66%, $pastel1 100%); // FF3.6+
+  background-image: url('../img/background.svg'), -webkit-gradient(linear, top, bottom, color-stop(0%,$pastel1), color-stop(33%,$pastel2), color-stop(66%,$pastel3), color-stop(100%,$pastel1)); // Chrome,Safari4+
+  background-image: url('../img/background.svg'), -webkit-linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // Chrome10+,Safari5.1+
+  background-image: url('../img/background.svg'), -o-linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // Opera 11.10+
+  background-image: url('../img/background.svg'), -ms-linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // IE10+
+  background-image: url('../img/background.svg'), linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // W3C
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$pastel1', endColorstr='$pastel1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient
+  background-repeat: repeat;
+  background-position: 0 0;
+
+  animation:         moving-bg 50s ease infinite;
+}
+
+///error {
+//  background-color: red;
+//  text-align: center;
+//}
+//.warning {
+//  background-color: orange;
+//  text-align: center;
+//}
+
+.header-title {
+  font-size: 7.5vw;
+  margin: 0;
+  width: 100%;
+  text-shadow: #fff 1px 1px 2px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.browserSupportTable {
+  margin: 0 auto;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+thead {
+  border-bottom: 1px RGBA(51,51,51,0.7) solid;
+}
+td, th {
+  padding: 5px;
+}
+tbody th {
+  text-align: right;
+}
+tbody td {
+  text-align: center;
+}
+footer {
+  font-weight: 100;
+  color: #666;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 12px;
+}
+
+@-webkit-keyframes moving-bg {
+  0%   { background-position: 0 0; }
+  100% { background-position: 348px 0; }
+}
+@-moz-keyframes moving-bg {
+  0%   { background-position: 0 0; }
+  100% { background-position: 348px 0; }
+}
+@-o-keyframes moving-bg {
+  0%   { background-position: 0 0; }
+  100% { background-position: 348px 0; }
+}
+@keyframes moving-bg {
+  0%   { background-position: 0 0; }
+  100% { background-position: 348px 0; }
+}
