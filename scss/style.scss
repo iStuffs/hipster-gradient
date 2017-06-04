@@ -57,12 +57,12 @@ h1, h2 {
 
   background-color: $pastel1;
   background-image: url('../img/background.svg'); // Old browsers
-  background-image: url('../img/background.svg'), -moz-linear-gradient(45deg,  $pastel1 0%, $pastel2 33%, $pastel3 66%, $pastel1 100%); // FF3.6+
-  background-image: url('../img/background.svg'), -webkit-gradient(linear, left bottom, right top, color-stop(0%,$pastel1), color-stop(33%,$pastel2), color-stop(66%,$pastel3), color-stop(100%,$pastel1)); // Chrome,Safari4+
-  background-image: url('../img/background.svg'), -webkit-linear-gradient(45deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // Chrome10+,Safari5.1+
-  background-image: url('../img/background.svg'), -o-linear-gradient(45deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // Opera 11.10+
-  background-image: url('../img/background.svg'), -ms-linear-gradient(45deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // IE10+
-  background-image: url('../img/background.svg'), linear-gradient(45deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // W3C
+  background-image: url('../img/background.svg'), -moz-linear-gradient(90deg,  $pastel1 0%, $pastel2 33%, $pastel3 66%, $pastel1 100%); // FF3.6+
+  background-image: url('../img/background.svg'), -webkit-gradient(linear, top, bottom, color-stop(0%,$pastel1), color-stop(33%,$pastel2), color-stop(66%,$pastel3), color-stop(100%,$pastel1)); // Chrome,Safari4+
+  background-image: url('../img/background.svg'), -webkit-linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // Chrome10+,Safari5.1+
+  background-image: url('../img/background.svg'), -o-linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // Opera 11.10+
+  background-image: url('../img/background.svg'), -ms-linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // IE10+
+  background-image: url('../img/background.svg'), linear-gradient(90deg,  $pastel1 0%,$pastel2 33%,$pastel3 66%,$pastel1 100%); // W3C
   //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$pastel1', endColorstr='$pastel1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient
   background-repeat: repeat;
   background-position: 0 0;
