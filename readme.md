@@ -1,6 +1,6 @@
 # Hipster Gradient
 
-/DOCUMENTATION/images/hipstergradient-browser.png
+![hipstergradient-browser](DOCUMENTATION/images/hipstergradient-browser.png)
 
 ## Description
 
@@ -10,7 +10,7 @@ J’ai mis en place une large entête avec un double arrière-plan, un gradient 
 Le svg est construit pour être répétable. Les icônes vectorielles (en svg) permettent une netteté quel que soit la taille de l’arrière plan à couvrir ou la définition (standard ou écran rétina 2x et 3x).
 J'ai animé cet arrière-plan en CSS en lui faisant effectuer une translation horizontale.
 
-/DOCUMENTATION/images/moving_gradient.gif
+![moving_gradient](DOCUMENTATION/images/moving_gradient.gif)
 
 ## Thème
  
@@ -20,7 +20,7 @@ J'ai animé cet arrière-plan en CSS en lui faisant effectuer une translation ho
 - Mine Shaft: #333333
 - White: #FFFFFF
 
-/DOCUMENTATION/images/color-hipster.png
+![color-hipster](DOCUMENTATION/images/color-hipster.png)
 
 Adobe color: [https://color.adobe.com/fr/Hipster-pastel-color-theme-6136123/](https://color.adobe.com/fr/Hipster-pastel-color-theme-6136123/)
 
