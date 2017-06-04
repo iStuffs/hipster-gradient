@@ -14,7 +14,7 @@ J’ai donc reproduit le design dans une large entête avec un double arrière-p
 
 ## Thème
 
- ![color-hipster pastel](DOCUMENTATION/images/color-hipster pastel.png)
+ ![color-hipster pastel](DOCUMENTATION/images/color-hipster.png)
 
 Thème: https://color.adobe.com/fr/Hipster-pastel-color-theme-6136123/
 
